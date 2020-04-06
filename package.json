@@ -1,13 +1,16 @@
 {
-    "name": "stripe-sample-demo",
+    "name": "kenyafund",
     "version": "1.0.0",
-    "description": "A Stripe demo",
-    "main": "index.js",
+    "description": "Made for Crestwood Prep",
+    "main": "server.js",
     "scripts": {
         "start": "node server.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "stripe-demos",
+    "keywords": [
+        "heroku"
+    ],
+    "author": "Robert_Muresan",
     "license": "ISC",
     "dependencies": {
         "body-parser": "^1.19.0",
@@ -15,5 +18,8 @@
         "express": "^4.17.1",
         "mongodb": "^3.5.5",
         "stripe": "^7.1.0"
+    },
+    "engines": {
+        "node": "v12.14.0"
     }
 }

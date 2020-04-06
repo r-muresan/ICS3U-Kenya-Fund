@@ -89,7 +89,7 @@ function addAnotherGoal(name, value, currentMoney, img) {
     var li = document.createElement("li");
     var div1 = document.createElement("div");
     var div2 = document.createElement("div");
-    div1.appendChild(document.createTextNode(name))
+    div1.appendChild(document.createTextNode(name + " ($" + value + ")"))
     div1.setAttribute("class", "goalName")
     div2.setAttribute("style", "width:100%; height:55px;")
     div2.setAttribute("id", name)

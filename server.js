@@ -47,7 +47,7 @@ app.get("/config", (req, res) => {
 });
 
 app.get("/goals", (req, res) => {
-    const a = { name: "Goal1", price: 20, img: "http://www.clker.com/cliparts/7/b/s/G/9/a/1-inside-a-circle-md.png" };
+    const a = { name: "School", price: 30, img: "http://www.clker.com/cliparts/7/b/s/G/9/a/1-inside-a-circle-md.png" };
     const b = { name: "Goal2", price: 50, img: "http://www.clker.com/cliparts/q/y/Z/9/w/O/2-inside-a-circle-md.png" };
     const c = { name: "Goal3", price: 100, img: "http://www.clker.com/cliparts/d/0/R/s/m/l/3-inside-a-circle-md.png" };
     const d = { name: "Goal4", price: 200, img: "https://www.clipartsfree.net/vector/large/43850-white-numeral-4-inside-green-circle-clipart.png" };
