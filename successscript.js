@@ -20,7 +20,7 @@ if (sessionId) {
                     name: name,
                     sessionJSON: sessionJSON
                 })
-            }).then(location.replace("http://localhost:8888"));
+            }).then(location.replace("https://kenyafund.herokuapp.com/"));
         });
         document.getElementById("submitAnon").addEventListener("click", function() {
             let name = "Anonymous"
@@ -33,11 +33,11 @@ if (sessionId) {
                     name: name,
                     sessionJSON: sessionJSON
                 })
-            }).then(location.replace("http://localhost:8888"));
+            }).then(location.replace("https://kenyafund.herokuapp.com/"));
         });
     }).catch(function(err) {
         console.log('Error when fetching Checkout session', err);
     });
 } else {
-    location.replace("http://localhost:8888")
+    location.replace("https://kenyafund.herokuapp.com/")
 }
