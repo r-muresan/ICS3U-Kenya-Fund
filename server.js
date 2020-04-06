@@ -4,7 +4,7 @@ dotenv.config();
 const STRIPE_PUBLISHABLE_KEY = process.env.STRIPE_PUBLISHABLE_KEY;
 const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY;
 const STATIC_DIR = __dirname;
-const DOMAIN = 'http://localhost:8888';
+const DOMAIN = process.env.DOMAIN;
 const CURRENCY = 'cad';
 const PAYMENT_METHODS = "card";
 const MONGODB_PASS = process.env.MONGODB_PASS;
