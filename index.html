@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="loading-bar.css" defer/>
+    <link rel="stylesheet" type="text/css" href="styleIndex.css" />
+    <script type="text/javascript" src="loading-bar.js" defer></script>
+</head>
+
+<body>
+    <div id="topbar">
+        <h1>Kenya Fundraiser</h1>
+
+
+    </div>
+    <div id="left" style="width: 29%;height: 90vh;float: left; text-align: center; position: fixed; top:10vh; margin:  0; ">
+        <h1> Goals</h1>
+        <ul id="goals" style="padding: 0;"></ul>
+    </div>
+    <div id="middle" style="width: 40%; height: 89vh; left: 29%; position: fixed;">
+        <div style="position: relative;">
+
+            <div class="ldBar label-center" data-preset="circle" data-transition-in="2" style='width:65%;height:25%;font-size: 2vw;left:17.5%; margin-top: 2vh;' id="bar"></div>
+        </div>
+        <div class="wrapper" style="text-align: middle;">
+            <h1 style="margin: 0; font-size: 20px;" id="currentGoal">Goal</h1>
+            <span>$</span><span id="current">0</span><span> / $</span><span id="goal">0</span>
+        </div>
+        <label for="amount">Enter amount</label>
+        <div class="flex">
+            <span class="currency">$</span>
+            <input id="amount" name="amount" type="number" max="1001" />
+        </div>
+        <button id="submit">
+        <b>Pay</b>
+         </button>
+    </div>
+    <div id="right" style="width: 29%; height: 1000px; float: right; text-align: center;">
+        <h1>Donations</h1>
+        <ul id="list"></ul>
+    </div>
+
+
+
+</body>
+
+
+</html>
